@@ -1,142 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --azul-claro: #ADD8E6;
-}
-
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #ffffff;
+.navbar-brand {
+    color: #4bd6e0;
+    font-size: 1.5rem;
 }
-
 
 section {
-    padding-bottom: 5rem;
+    text-align: left;
 }
 
 
-.nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+.gradient-background {
+    background: linear-gradient(to right, #9ed6fc, #cadce9); 
+    color: #050129; 
+    padding: 50px 0; 
+    
 }
 
-.inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
+#sobre-danca h2 {
+    text-shadow: 6px 6px 12px rgba(26, 74, 232, 0.7); 
+    font-size: 3rem;
 }
 
-/* posicionamento para a imagem à direita */
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+#sobre-danca p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    line-height: 1.6;
+    text-align: center; 
+  
 }
 
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
-.botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
-    height: 3em;
-    /* Convertido para em */
-    align-content: center;
-
-}
-
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
-}
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
+.container-decorada {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
+    justify-content: space-between;
 }
 
+.decoracao-esquerda,
+.decoracao-direita {
+    width: 150px; /* Ajusta o tamanho das imagens */
+    height: auto; /* Mantém a proporção */
+}
 
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+.conteudo-central {
+    text-align: center;
+    max-width: 600px; /* Define um limite para o conteúdo */
 }
 
 #galeria {
-    background-color: #FAF4F4;
-
+    background: #cadce9; /* Cor de fundo leve */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
+#galeria h2 {
+    color: #050505;
+    text-shadow: 6px 6px 12px rgba(26, 74, 232, 0.7);
 }
 
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+#galeria img {
+    max-height: 250px; /* Limita a altura das imagens */
+    object-fit: cover; /* Ajusta o enquadramento das imagens */
 }
 
-.formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
+#galeria p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+#galeria {
+    margin-top: 50px; 
+    
 }
 
-.formulario button {
-    background-color: #CB6D43;
-    border: none;
-    font-weight: bold;
+.formulario-decorado {
+    background: linear-gradient(to right, #9ed6fc, #cadce9); /* Gradiente suave */
+    padding: 50px;
+    border-radius: 15px; /* Arredonda as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-top: 50px; /* Dá espaço entre o topo e a seção anterior */
 }
 
-/* chama classe do bootstrap para modificar a cor */
+.formulario-decorado h2 {
+    color: #050129;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+}
+
 .form-control {
-    background-color: #F1EDEF;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordas arredondadas nos campos */
+    padding: 10px;
+    font-size: 1rem;
+}
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.btn-primary:hover {
+    background-color: #45A049; /* Altera a cor no hover */
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    font-style: italic;
 }
