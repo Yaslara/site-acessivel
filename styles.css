@@ -40,17 +40,17 @@ section {
 
 .decoracao-esquerda,
 .decoracao-direita {
-    width: 150px; /* Ajusta o tamanho das imagens */
-    height: auto; /* Mantém a proporção */
+    width: 150px; 
+    height: auto; 
 }
 
 .conteudo-central {
     text-align: center;
-    max-width: 600px; /* Define um limite para o conteúdo */
+    max-width: 600px; 
 }
 
 #galeria {
-    background: #cadce9; /* Cor de fundo leve */
+    background: #cadce9; 
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -61,8 +61,8 @@ section {
 }
 
 #galeria img {
-    max-height: 250px; /* Limita a altura das imagens */
-    object-fit: cover; /* Ajusta o enquadramento das imagens */
+    max-height: 250px; 
+    object-fit: cover; 
 }
 
 #galeria p {
@@ -76,21 +76,21 @@ section {
 }
 
 .formulario-decorado {
-    background: linear-gradient(to right, #9ed6fc, #cadce9); /* Gradiente suave */
+    background: linear-gradient(to right, #9ed6fc, #cadce9); 
     padding: 50px;
-    border-radius: 15px; /* Arredonda as bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    margin-top: 50px; /* Dá espaço entre o topo e a seção anterior */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 50px; 
 }
 
 .formulario-decorado h2 {
     color: #050129;
-    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); 
 }
 
 .form-control {
     border: 1px solid #ddd;
-    border-radius: 8px; /* Bordas arredondadas nos campos */
+    border-radius: 8px; 
     padding: 10px;
     font-size: 1rem;
 }
@@ -101,11 +101,37 @@ section {
     padding: 10px 20px;
 }
 .btn-primary:hover {
-    background-color: #45A049; /* Altera a cor no hover */
+    background-color: #45A049; 
 }
 
 p {
     color: rgb(0, 0, 0);
     font-size: 0.9rem;
     font-style: italic;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+
+.apresenta-lista{
+    display: none;
 }
