@@ -7,7 +7,7 @@
     <title>Dance Magic</title>
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,10 +26,13 @@
             </div>
         </div>
         <div id="acessibilidade" class="menu-acessibilidade">
-            <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
+            <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
         <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-            <Button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</Button>
-            <Button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</Button>
+            <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+            <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamnaho da fonte" >A-</button>
+            <button id="alterna-contraste" class="btn btn-primary fw-bold"> 
+                <i class="bi bi-shadows"></i></button>
+        </div>
         </div>
     </nav>
     <section id="inicio" class="d-flex align-items-center" style="background: linear-gradient(to right, #9ed6fc, #cadce9); height: 100vh;">
@@ -46,7 +49,7 @@
  
 
 
- <section id="sobre-danca" class="gradient-background text-blue p-5">
+ <section id="sobre-danca" class="gradient-background text-blue p-5" tabindex="0">
     <div class="container">
     <div class="container-decorada">
             <img src="img/decoração p2.png" class="decoracao-esquerda" alt="Decoração Esquerda" title="decoração- autoria própia">
@@ -60,7 +63,7 @@
             <img src="img/decoração p1 - Copia.png" class="decoracao-direita" alt="Decoração Direita" title="decoração- autoria própia">
         </div>
 
-        <section id="galeria" class="p-5">
+        <section id="galeria" class="p-5" tabindex="0">
             <div class="container text-center">
                 <h2 class="mb-4 fw-bold">Imagens</h2>
                 <div class="row">
@@ -105,6 +108,7 @@
     </div>
 </section>
  </header>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
  <script src="script.js"></script>
 </body>
 </html>
